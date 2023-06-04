@@ -98,5 +98,3 @@ for i in range(1, len(all_links) - 1):
     f.write("Link:" + str(all_links[i]))
     cnt = get_content(all_links[i], cnt)
 f.close()
-
-
