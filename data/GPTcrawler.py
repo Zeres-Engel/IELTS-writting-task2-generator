@@ -17,7 +17,7 @@ def ask_question(sample, key_list):
     api_key = get_api_key(key_list)
     openai.api_key = api_key
     words = sample.count(' ')
-    prompt = f"rewrite an essay follows IELTS writing task 2 format band score 7. or higher, about {words + 500} words and depending on this essay: {sample}"
+    prompt = f"rewrite an essay follows IELTS writing task 2 format band score 7. or higher, about {words} words and depending on this essay: {sample}"
     while True:
         try:
             response = openai.Completion.create(
